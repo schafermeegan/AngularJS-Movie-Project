@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
+    margin: 0;
+    background-image: url("aperture.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+.pos-f-t{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.genre-option-box {
+    color: white;
+    font-size: 25px;
+    width: 50%;
+    margin: 0;
+    height: 65px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#search-spec-form {
+    width: 60%;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-weight: 100;
+}
+
+.title {
+    color: black;
+}
+
+.image {
+    display: flex;
+}
+
+#body::after {
+    content: "";
+    background: url("aperture.jpg");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav {
+    float: right;
+    color: white;
+}
+
+p {
+    color: black;
+}
+
+.allThingsMovies {
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 75px;
+    font-size: 75px;
+    text-align: center;
+    width: 40%;
+    color: white;
+    margin-left: 25px;
+    font-weight: 100px;
+}
+
+#result-filter:hover, #search-filter:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: solid black;
+    box-shadow: none;
+}
+
+#result-filter, #search-filter {
+    color: black;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 50px;
+    border: solid white;
+    font-size: 35px;
+    border-radius: 7px;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 3px 3px 5px lightgray;
+    margin-left: 25px;
+}
+
+#close-button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: solid black;
+    box-shadow: none;
+}
+
+#close-button {
+    color: black;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    border: solid white;
+    font-size: 35px;
+    border-radius: 7px;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 3px 3px 5px lightgray;
+    margin-left: 25px;
+}
+
+#search-input{
+    color: black;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 10px;
+    border: solid white;
+    font-size: 1.5em;
+    border-radius: 7px;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 3px 3px 5px lightgray;
+    margin-left: 25px;
+}
+
+a {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100px;
+}
+
+.rating {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.rating-input {
+    float: right;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0 0 0 -16px;
+    opacity: 0;
+}
+
+.star {
+    cursor: pointer;
+}
+  
+ search {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+} 
+
+#search-spec-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+} 
+
+.genre-option-box {
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+justify-items: space-around;
+width: 175px;
+font-size: 15px;
+margin-left: 65px;
+} 
+
+input [type=checkbox] {
+    transform: scale(2);
+}
+
+.genre-option-box label {
+    margin: 5px;
+}
+
+.genre-option-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genre-option {
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.checkbox-box{
+    display: flex;
+}
+
+.checkbox-container{
+    display: flex;
+    justify-content: space-between;
+    justify-items: space-between;
+    align-content: center;
+    align-content: center;
+} 
+
+
+.checkbox{
+    display: flex;
+    align-self: center;
+    height: 20px;
+    width: 20px;
+}
+
+.genre-inclusion-checkbox{
+    font-family: 'Material Icons';
+    content: 'check';
+}
+
+.genre-exclusion-checkbox{
+    font-family: 'Material Icons';
+    content: 'close';
+}   
+
+#box-container {  
+    display: flex;
+    height: 325px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 280px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+ display: flex;
+ flex-wrap: wrap;
+ width: 300px;
+ text-align: center;
+ color: black;
+}
+
+.movie-title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.movie-description {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.movie-poster {
+    display: flex;
+    width: 100%;
+}
+
+/* movie-list Styling */
+
+    #movie-list-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+        justify-items: center;
+    }
+
+        .movie-post{
+            background-color: hsla(0, 0%, 100%, 0.7);
+            padding: 10px;
+            width: 20%;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            justify-items: space-around;
+            align-content: center;
+            align-items: center;
+            position: relative;
+            height: 650px;
+            border-radius: 5px;
+        }
+
+            .title-container{
+                margin: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                justify-items: space-between;
+                align-content: center;
+                align-items: center;
+            }
+
+        .arrows{
+            color: white;
+        }
+
+        .arrows:hover{
+            cursor: pointer;
+        }
+
+        #page-number-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+
+            position: fixed;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+            width: 100vw;
+        }
+        
+            #page-box-1{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+                align-items: center;
+                margin-right: 10px;
+            }
+
+                #page-limit-text{
+                    display: flex;
+                    color: white;
+                    justify-content: center;
+                    align-content: center;
+                    justify-items: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                    font-size: 1.5em;
+                    margin-bottom: 0px;
+                }
+            
+            #page-box-2{
+                display: flex;
+                margin-left: 10px;
+            }
+        
+                #page-selection-input{
+                    text-align: center;
+                }
+
+/* Favorites / watch-list Styling */
+
+                .spacer{
+                    width: 35px;
+                    display: flex;
+                }
+
+                /* favorite button */
+
+                .star-container{
+                    display: flex;
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    top: 10px;
+                    right: 10px;
+                }
+
+                    .star{
+                        width: 100%;
+                        height: 100%;
+                        color: black;
+                    }
+
+    #watchlist-container{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .inputs {
+        width: 75px;
+        font-size: 25px;
+        background-color: hsla(0, 0%, 100%, 0.1);
+        color: white;
+        border: none;
+        padding: 0;
+    }
+
+    .stuff {
+        padding: 35px;
+    }
+
+    .ranges {
+        width: 300px;
+    }
+
+    .length-question, .rating-question {
+        color: white;
+        font-family: 'Playfair Display', serif;
+        font-size: 25px;
+    }
+
+    .ratingInput {
+       
+    }
+    .questions {
+        margin-left: 60px;
+    }
+
+#page-limit-text{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+#page-box-2{
+    display: flex;
+    margin-left: 10px;
+}
+
+.spacer{
+    width: 35px;
+    display: flex;
+}
+
+.star-container{
+    display: flex;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    right: 10px;
+}
+
+
+.more-info{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+more-info{
+    /* position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index:2; */
+}
+
+#detailed-backdrop{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+} 
+
+#detailed-info-pane{
+    background-color: hsla(0, 0%, 100%, 0.7);
+    width: 100vw;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    z-index:2;
+}
+
+    #detailed-star-container{
+        display: flex;
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        top: 30px;
+        right: 30px;
+    }
+
+        #detailed-star-full, #detailed-star-empty{
+            width: 100%;
+            height: 100%;
+            color: black;
+            font-size: 3em;
+        }
+
+    #detailed-title{
+        
+    }
+
+    #detailed-movie-description{
+        text-align: center;
+        font-size: 20px;
+        width: 500px;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    #detailed-genres{
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 550;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        
+    }
+
+    .detailed-genre-list{
+        
+    }
+
+    #detailed-vote-avg{
+        font-size: 30px;
+        font-weight: 550;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+
+    }
